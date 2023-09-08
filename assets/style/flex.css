@@ -1,0 +1,128 @@
+/* CABEÇALHO */
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 33px;
+}
+
+/* CATEGORIAS */
+.categorias__lista {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+
+/* DESTAQUES */
+.destaques {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 10PX;
+}
+
+/* DESTAQUES */
+.destaques__barra {
+    flex-grow: 1;
+}
+
+/* EVENTOS */
+.eventos__lista {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1.5rem;
+    row-gap: 1rem;
+    justify-content: center;
+}
+
+/* EVENTOS */
+.eventos__item {
+    flex-grow: 1;
+    max-width: 400px;
+}
+
+/* AGENDAS */
+.agenda__lista {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1.5rem;
+    row-gap: 1rem;
+    justify-content: center;    
+}
+
+/* AGENDAS */
+.agenda__item {
+    flex-grow: 1;
+}
+
+/* RODAPÉ */
+.rodape {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.rodape__lista {
+    margin-bottom: 1rem;
+}
+
+.rodape__logo {
+    align-self: end;
+}
+
+
+@media (min-width: 720px) {
+
+    /* CABEÇALHO */    
+    .menu {
+        column-gap: 75px;
+    }
+
+    /* CATEGORIAS */
+    .categorias__lista {
+        flex-wrap: wrap;
+        column-gap: 1.5rem;
+        row-gap: 1rem;
+    }
+
+    /* EVENTOS */
+    .eventos__lista {
+        justify-content: end;
+    }
+
+    /* AGENDAS */
+    .agenda__lista {
+        justify-content: end;    
+    }
+    
+}
+
+@media (min-width: 1440px) {
+    /* CABEÇALHO */
+    .menu {
+        column-gap: 105px;
+        flex-wrap: nowrap;
+    }
+    /* CABEÇALHO */
+    .menu__item:nth-child(1) {
+        order: 1;
+    }
+    /* CABEÇALHO */
+    .menu__item:nth-child(2) {
+        order: 3;
+    }
+    /* CABEÇALHO */
+    .menu__item:nth-child(3) {
+        order: 4;
+    }
+    /* CABEÇALHO */
+    .menu__item:nth-child(4) {
+        order: 5;
+    }
+    /* CABEÇALHO */
+    .menu__item:nth-child(5) {
+        order: 2;
+    }
+    
+}
